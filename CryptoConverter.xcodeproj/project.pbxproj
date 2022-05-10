@@ -13,17 +13,19 @@
 		0D7D1C46282B235A004237C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D1C44282B235A004237C6 /* Main.storyboard */; };
 		0D7D1C48282B235D004237C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D1C47282B235D004237C6 /* Assets.xcassets */; };
 		0D7D1C4B282B235D004237C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D1C49282B235D004237C6 /* LaunchScreen.storyboard */; };
+		0D7D1C57282B246E004237C6 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D1C56282B246E004237C6 /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D7D1C3B282B235A004237C6 /* CryptoConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7D1C3E282B235A004237C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D7D1C40282B235A004237C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D7D1C42282B235A004237C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D7D1C42282B235A004237C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CryptoConverter/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		0D7D1C45282B235A004237C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D7D1C47282B235D004237C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D7D1C4A282B235D004237C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D7D1C4C282B235D004237C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D7D1C56282B246E004237C6 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				0D7D1C3E282B235A004237C6 /* AppDelegate.swift */,
 				0D7D1C40282B235A004237C6 /* SceneDelegate.swift */,
-				0D7D1C42282B235A004237C6 /* ViewController.swift */,
-				0D7D1C44282B235A004237C6 /* Main.storyboard */,
+				0D7D1C58282B2472004237C6 /* Model */,
+				0D7D1C52282B23D9004237C6 /* View */,
+				0D7D1C53282B23E5004237C6 /* Controller */,
 				0D7D1C47282B235D004237C6 /* Assets.xcassets */,
 				0D7D1C49282B235D004237C6 /* LaunchScreen.storyboard */,
 				0D7D1C4C282B235D004237C6 /* Info.plist */,
 			);
 			path = CryptoConverter;
+			sourceTree = "<group>";
+		};
+		0D7D1C52282B23D9004237C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D1C44282B235A004237C6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D7D1C53282B23E5004237C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D1C42282B235A004237C6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D7D1C58282B2472004237C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D1C56282B246E004237C6 /* CoinManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7D1C57282B246E004237C6 /* CoinManager.swift in Sources */,
 				0D7D1C43282B235A004237C6 /* ViewController.swift in Sources */,
 				0D7D1C3F282B235A004237C6 /* AppDelegate.swift in Sources */,
 				0D7D1C41282B235A004237C6 /* SceneDelegate.swift in Sources */,
