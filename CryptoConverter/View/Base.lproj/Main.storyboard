@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qve-nJ-0RD">
-                                <rect key="frame" x="0.0" y="646" width="0.0" height="216"/>
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TM5-MN-9N6">
                                 <rect key="frame" x="0.0" y="54" width="414" height="140"/>
@@ -84,6 +84,11 @@
                             <constraint firstItem="Qve-nJ-0RD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ryk-w5-Hlu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="Uc5-uz-ikJ" id="vcB-5V-tH2"/>
+                        <outlet property="currencyLabel" destination="wbm-mJ-YMh" id="3Ll-24-z0o"/>
+                        <outlet property="currencyPicker" destination="Qve-nJ-0RD" id="fKQ-EE-B3m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
