@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
    
-    let coinManager = CoinManager()
+    var coinManager = CoinManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         let selectedCurrency = coinManager.currencyArray[row]
         coinManager.getCoinPrice(for: selectedCurrency)
     }
-
-
+    
 }
 
